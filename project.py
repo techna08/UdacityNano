@@ -60,3 +60,9 @@ plt.xlabel("Date Range")
 plt.ylabel("Number of Bookings")
 plt.legend(labelspacing = 13)
 plt.show()
+
+#taking stock of property type
+df_listings_propety_type_count=df_listings['property_type'].value_counts()
+print(df_listings_propety_type_count)
+df_listings_propety_type_count.plot(kind="pie",figsize=(50,50))
+plt.show()
